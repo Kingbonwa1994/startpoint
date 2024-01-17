@@ -1,26 +1,79 @@
-{% load compress %}
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django + Tailwind CSS + Flowbite</title>
-
-    {% compress css %}
-    <link rel="stylesheet" href="{% static 'src/output.css' %}">
-    {% endcompress %}
-
+    <title>Starting Point Empowerment Hub</title>
+    <!-- Add your Tailwind CSS CDN link here -->
 </head>
+<body class="font-sans bg-gray-100">
 
-<body class="bg-green-50">
-    <div class="container mx-auto mt-4">
-        {% block content %}
-        {% endblock content %}
-    </div>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex items-center text-white">
+        <!-- Replace 'hero-image.jpg' with the actual image or video source -->
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Empowering Kids with Contemporary Skills</h1>
+            <p class="text-lg mb-8">Unlocking potential through education and innovation</p>
+            <a href="#quote-request" class="bg-blue-500 text-white px-6 py-3 rounded-full">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <!-- Add your service cards with icons and descriptions here -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <!-- Add your company history, team profiles, testimonials, and logos here -->
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Why Choose Us</h2>
+            <!-- Add your unique selling propositions, emphasis points, and environmental commitment here -->
+        </div>
+    </section>
+
+    <!-- Quote Request Section -->
+    <section id="quote-request" class="bg-cover bg-center py-16 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get Started Today</h2>
+            <!-- Add your quote request form with necessary fields here -->
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What People Say</h2>
+            <!-- Add logos, reviews, and social media feeds here -->
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-500 py-8 text-center text-white">
+        <div class="container mx-auto">
+            <p class="text-lg mb-2">Ready to empower kids with contemporary skills?</p>
+            <a href="#quote-request" class="font-bold">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex justify-between">
+            <!-- Add your contact information, links, and social media icons here -->
+        </div>
+    </footer>
+
+    <!-- Add your JavaScript files and additional dependencies here -->
+
 </body>
-
 </html>

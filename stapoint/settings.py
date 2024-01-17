@@ -116,4 +116,4 @@ COMPRESS_ROOT = BASE_DIR / 'static'
 
 COMPRESS_ENABLED = True
 
-STATICfILES_FINDERS = ('compressor.finders.CompressorFinder',)
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
